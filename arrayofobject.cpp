@@ -1,28 +1,31 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
-class Abc
-{
-    int id;
-    int sal;
-    public:
-    void setdata(void)
-    {
-        sal = 122;
-        cout << "eneter the id" << endl;
-        cin >> id;
-    }
-    void getdata(void)
-    {
-        cout << "the id " << id<<endl;
-    }
+
+class student{
+public:
+int id;
+char name[90];
+void setdata(){
+cout<<"entere name";
+cin>>name;
+cout<<"entere id\n";
+cin>>id;
+}
+void showdata(){
+    cout<<id<<name<<"\n";
+
+}
 };
-int main()
-{
-    Abc a[4];
-    for (int i = 0; i < 4; i++)
-    {
-        a[i].setdata();
-        a[i].getdata();
-    }
-    return 0;
+int main(){
+student s[5];
+for(int i=0;i<5;i++){
+    s[i].setdata();
+
+
+}
+cout<<"show data";
+for(int i=0;i<5;i++){
+s[i].showdata();
+
+}
 }
