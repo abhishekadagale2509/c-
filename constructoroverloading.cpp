@@ -1,40 +1,22 @@
 #include<iostream>
 using namespace std;
-class complex{
-    int a,b;
-    public:
-    complex(int x ,int y)
-    {
-        a=x;
-        b=y;
+class square{
+private:
+int x;
+public:
+square(int x){
+    cout<<x*x<<"\n";
 
-
-    }
-    complex(int x){
-        a=x;
-        b=0;
-    }
-    complex(){
-        a=0;
-        b=0;
-    }
-    void princon(){
-        cout<<a<<"and"<<b<<endl;
-
-    }
-    
+}
+square(float x)
+{
+    cout<<x*x<<"\n";
+}
 };
 int main()
 {
-    complex c(4,5);
-    c.princon();
-    complex d(4);
-    d.princon();
-    complex e;
-    e.princon();
-
+    square s1(5);
+    square s2(5.5f);
     
-
-    return 0;
 
 }
